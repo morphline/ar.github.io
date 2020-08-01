@@ -1,0 +1,1 @@
+平台前端界面是基于layui UI框架设计，其中ServiceGeneration.html为平台模板生成界面，time.jpg为界面背景图

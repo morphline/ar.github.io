@@ -1,0 +1,247 @@
+.pc .creative>div {
+    color: #fff;
+}
+.pc{
+
+}
+ .carousel {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 0;
+    width: 100%;
+    padding: 0 100px;
+    margin-top: 10vh;
+    overflow: hidden;
+}
+.carousel .center {
+    transform: scale(1) translate(-50%);
+    z-index: 99;
+}
+.carousel .item {
+    list-style: none;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transition: all .4s;
+}
+ .carousel .center .img-wrap {
+    border: none;
+    box-shadow: 0 0 16px rgba(0,0,0,.4);
+}
+
+.center .img-wrap {
+    opacity: 1;
+}
+ .carousel .img-wrap {
+    width: 400px;
+    height: 300px;
+    background: #666;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    opacity: .6;
+}
+ .creative .img-wrap {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.carousel .img-wrap img {
+    object-fit: cover;
+    z-index: 4;
+    cursor: pointer;
+}
+.carousel .img-wrap img,  .carousel .img-wrap video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+}
+ .creative .img-wrap img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.carousel .img-wrap video {
+    z-index: 3;
+    background: #000;
+}
+ .carousel .img-wrap img, .carousel .img-wrap video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+}
+ .center .video-desc p {
+    text-align: center;
+}
+ .item .t1 {
+    color: #fff;
+}
+
+.item p {
+    margin-top: 24px;
+}
+
+
+
+.carousel .right {
+    transform: scale(.78) translate(40%);
+    opacity: .6;
+}
+ .carousel .item {
+    list-style: none;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transition: all .4s;
+}
+.carousel .img-wrap {
+    width: 400px;
+    height: 300px;
+    background: #666;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    opacity: .6;
+}
+.creative .img-wrap {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.carousel .img-wrap img {
+    object-fit: cover;
+    z-index: 4;
+    cursor: pointer;
+}
+ .carousel .img-wrap img, .carousel .img-wrap video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+}
+ .creative .img-wrap img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ .carousel .img-wrap video {
+    z-index: 3;
+    background: #000;
+}
+ .carousel .img-wrap img, .carousel .img-wrap video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+}
+ .right .video-desc p {
+    text-align: right;
+}
+.item .t1 {
+    color: #fff;
+}
+.item p {
+    margin-top: 24px;
+}
+
+
+
+
+.carousel .left {
+    transform: scale(.78) translate(-165%);
+    opacity: .6;
+}
+.carousel .item {
+    list-style: none;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transition: all .4s;
+}
+ .carousel .img-wrap {
+    width: 400px;
+    height: 300px;
+    background: #666;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    opacity: .6;
+}
+.creative .img-wrap {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+
+
+#carousel-left {
+    margin-left: -470px;
+}
+#carousel-left,  #carousel-right {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    transform-origin: center center;
+    z-index: 99;
+    margin-top: -40px;
+    cursor: pointer;
+}
+#carousel-left img,#carousel-right img {
+    width: 70px;
+    left: 70px;
+    object-fit: cover;
+}
+
+
+
+ #carousel-right {
+    margin-left: 480px;
+}
+ #carousel-left,  #carousel-right {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    transform-origin: center center;
+    z-index: 99;
+    margin-top: -40px;
+    cursor: pointer;
+}
+ #carousel-left img, #carousel-right img {
+    width: 70px;
+    left: 70px;
+    object-fit: cover;
+}
+#carousel-right img {
+    transform: rotate(180deg);
+}
+
+

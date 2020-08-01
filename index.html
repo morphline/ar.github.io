@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Layui</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta data-rh="true" property="og:type" content="website" /><meta data-rh="true" property="og:image" content="https://gw.alipayobjects.com/zos/rmsportal/rlpTLlbMzTNYuZGGCVYM.png" /><meta data-rh="true" property="og:title" content="布局 Layout - Ant Design" /><meta data-rh="true" name="description" content="协助进行页面级整体布局。" />
+  <link rel="stylesheet" href="./layui-master/layui-master/dist/css/layui.css"  media="all">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="wrapper.css">
+  <link rel="stylesheet" type="text/css" href="three-trans.css">
+  <link rel="stylesheet" type="text/css" href="component.css">
+  <link rel="stylesheet" type="text/css" href="carousel.css">
+  <link rel="stylesheet" type="text/css" href="./carousel1.css">
+
+
+  
+  <link rel="icon" href="./资源tansp.png" type="image/x-icon" />  
+  <!-- 注意：如果你直接复制所有代码到本地，上述css路径需要改成你本地的 -->
+  <style>
+     .backimage {
+	      /* background-image:url ("timg.jpg"); */
+	 }
+  </style>
+</head>
+<!-- <body style="background-image:url(./timg.jpg)"> -->
+  <body >
+<div class="top">
+    <div class="center-c"><div class="center-c-l"><img src="./资源tansp.png" alt=""></div> <div style="display: flex;">
+      <ul class="center-c-c">
+      <li style="font-size: 18px;" class="neirong"><a href="#">首页</a></li>
+      <li style="font-size: 18px;" class="neirong"><a href="#service">产品服务</a> <!----></li>
+
+       <li style="font-size: 18px;" class="neirong"><a href="#solution">解决方案</a> <!----></li> 
+       <li style="font-size: 18px;" class="neirong"><a href="#case">典型案例</a> <!----></li> 
+        <li style="font-size: 18px;" class="neirong"><a href="#">新闻资讯</a> <!----></li> 
+        <li style="font-size: 18px;" class="neirong"><a href="#">关于我们</a></li>
+
+          </ul></div></div>
+</div>
+
+<!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+<!--[if lt IE 9]>
+  <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+  <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<!-- <ul class="layui-nav" style="background:white;color: black;">
+  
+  <img src="./资源tansp.png" style="width: 300px;height: 80px;"  />	
+  <div style="display: inline-grid;">
+
+    <h1 style="font-size: x-large;padding-left: 20px;padding-bottom: 10px;align-content: center;">Web AR服务平台</h1>
+    <h1 style="font-size:smaller;padding-left: 20px;">Web AR ServicePlatform</h1>
+  </div>
+</ul> -->
+
+<div style="margin-top:95px;">
+  <div class="layui-carousel" style="width: 100%;" id="test22">
+    <div carousel-item style="width: 100%;">
+      <div style="background: url(bg/1.png);background-size: 100% 100%;text-align: center;">
+        <div style="position: absolute;font-weight: bolder;font-size: 30px;color: white;top: 8.5%;right: 17%;">AUGMENT</div>
+
+        <div class="primary-button center" style="left: 25%;">
+          <h1 style="color: white;margin-bottom: 20px;font-family: Georgia;">Web AR服务平台</h1>
+          <!-- <h4 style="margin-bottom: 20px;">Web AR Service Platform</h4> -->
+          <h4 style="margin-bottom: 20px;width: 400px;color: rgb(255,255,255,0.6);">互联万物， 创所未见
+            </h4>
+          <a  href="./ServiceGeneration.html" style="z-index: 1000;cursor: pointer;" class="scroll-link" data-id="book-table">Web AR服务模板定制</a>
+      </div>
+    
+      </div>
+      <div style="background: url(bg/8副本.png);background-size: 100% 100%;text-align: center;">
+        <div class="primary-button center" style="left:80%;top: 60%;">
+          <h1 style="color: white;margin-bottom: 20px;font-family: Georgia;">Web AR服务平台</h1>
+          <!-- <h4 style="margin-bottom: 20px;">Web AR Service Platform</h4> -->
+          <h4 style="margin-bottom: 20px;width: 400px;color: rgb(255,255,255,0.6);">互联万物， 创所未见
+            </h4>
+          <a  href="./ServiceGeneration.html" style="z-index: 1000;cursor: pointer;" class="scroll-link" data-id="book-table">Web AR服务模板定制</a>
+          <div style="font-size: 25px;font-weight: bolder;color: white;margin-top: 20%;margin-left: 10%;">
+            ENERGY NETWORK
+          </div>
+      </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div style="background-image: url(微信图片edu-s.jpg);width: 100%;height:500px;    position: relative; background-repeat: no-repeat;background-size: 100% 100%;text-align: center;">
+    <div style="width: auto;height: auto;">
+      <!-- <video style="width: 100%;" poster="./AR-poster.png" id="bannerVideo" src="./video.mp4" muted="muted" autoplay="autoplay" loop="loop"  style="margin-top: 110px; visibility: visible;">
+        您的浏览器不支持 video 标签。
+      </video> -->
+    </div>
+  <!-- <h1 style="position: absolute;right: 22%;top: 7%;color: white;font-size:40px;font-weight: bold;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; ">5G</h1> -->
+
+    <div class="primary-button center" style="left: 80%;">
+      <h1 style="color: white;margin-bottom: 20px;font-family: Georgia;">Web AR服务平台</h1>
+      <!-- <h4 style="margin-bottom: 20px;">Web AR Service Platform</h4> -->
+      <h4 style="margin-bottom: 20px;width: 400px;color: rgb(255,255,255,0.8);">面向 5G 网络，构建基于分布式的 Web 增强现实
+        协同计算架构，实现轻量级、跨平台、实时交互的移动 Web 增强现实应用服务
+        </h4>
+      <a  href="./ServiceGeneration.html" style="z-index: 1000;cursor: pointer;" class="scroll-link" data-id="book-table">Web AR服务模板定制</a>
+  </div>
+  <!-- <video style="width: 40%;height: 40%;position:absolute;top:30%" poster="./AR-poster.png" id="bannerVideo" src="./video.mp4" muted="muted" autoplay="autoplay" loop="loop"  style="margin-top: 110px; visibility: visible;">
+    您的浏览器不支持 video 标签。
+  </video> -->
+  
+  </div>
+
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r75/three.min.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/OrbitControls-2.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/bas.js"></script>
+
+  <script src="./three-trans.js"></script> -->
+
+
+  
+                				<!-- Section -->
+                <section id="service" class="wrapper style1" style="z-index: 0;">
+                    <div class="inner">
+                        <header class="align-center">
+                            <h2 style="margin-bottom: 15px;font-weight: bolder;font-size: 25px;">产品服务</h2>
+                            <p>PRODUCT SERVICE</p>
+                        </header>
+                        <div class="content">
+                            <a class="card1"href="#!" >
+                          
+                        <div class="front" style="background-image: url(service-image/shibie417_1.png);">
+                          </div>
+                          <div class="back" style="background-image: url(service-image/图像识别.png);background-size: cover;">
+                            <div>
+                              <!-- <p>端 + 边 + 云</p>
+                              <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p> -->
+                            </div>
+                          </div>
+                      </a>
+                      <a class="card1" href="#!">
+                          
+                        <div class="front" style="background-image: url(service-image/3dmodel417_2.png);">
+                          </div>
+                          <div class="back" style="background-image: url(service-image/3D.png);background-size: cover;">
+                            <div>
+                            </div>
+                          </div>
+                      </a>
+
+                      <a class="card1" href="#!">
+                          
+                        <div class="front" style="background-image: url(service-image/huodong417_3.png);">
+                          </div>
+                          <div class="back" style="background-image: url(service-image/自定义.png);background-size: cover;">
+                            <div>
+                            </div>
+                          </div>
+                      </a>
+
+                      </div>
+                </section>
+
+
+
+                				<!-- Section -->
+                <section  id="solution" class="wrapper style1" style="z-index: 0;">
+                    <div class="inner">
+                        <header class="align-center">
+                            <h2 style="margin-bottom: 15px;font-weight: bolder;font-size: 25px;">产品优势</h2>
+                            <p>PRODUCT ADVANTAGE</p>
+                        </header>
+                        <div style="margin: 0 60px;" class="flex flex-3">
+                            <div class="col align-center">
+                                <div class="card" style="width: 300px;height: 300px;">
+                                    <img style="position: relative;
+                                    margin-bottom: 20px;
+                                    width: 33%;
+                                    height: 38%;" src="./轻量.png"/>
+                                    <p style="    padding: 20px;
+                                    font-size: 13px;
+                                    font-family: 'Microsoft YaHei';
+                                    color: rgb(63, 63, 63);">
+                                    轻量级
+                                    </p>
+                                    <p style="padding-left: 10px;
+                                    padding-right: 10px;
+                                    padding-top: 20px;
+                                    font-size: 13px;
+                                    font-family: 'Microsoft YaHei';
+                                    color: rgb(129, 129, 129);
+                                    line-height: 25px;">
+                                    用户无需下载安装APP，通过H5网页直接体验AR功能，营销效果尽在掌握
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col align-center">
+                                <div class="card" style="width: 300px;height: 300px;">
+                                    <img style="position: relative;
+                                    margin-bottom: 20px;
+                                    width: 33%;
+                                    height: 38%;" src="./跨平台.png"/>
+                                    <p style="    padding: 20px;
+                                    font-size: 13px;
+                                    font-family: 'Microsoft YaHei';
+                                    color: rgb(63, 63, 63);">
+                                    跨平台
+                                    </p>
+                                    <p style="padding-left: 10px;
+                                    padding-right: 10px;
+                                    padding-top: 20px;
+                                    font-size: 13px;
+                                    font-family: 'Microsoft YaHei';
+                                    color: rgb(129, 129, 129); line-height: 25px;">
+                                    可跨越各大平台普适性高，易于病毒式传播，提升品牌曝光度
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="col align-center">
+                                <div class="card" style="width: 300px;height: 300px;">
+                                    <img style="position: relative;
+                                    margin-bottom: 20px;
+                                    width: 33%;
+                                    height: 38%;" src="./互动.png"/>
+                                    <p style="    padding: 20px;
+                                    font-size: 13px;
+                                    font-family: 'Microsoft YaHei';
+                                    color: rgb(63, 63, 63);">
+                                    互动性
+                                    </p>
+                                    <p style="padding-left: 10px;
+                                    padding-right: 10px;
+                                    padding-top: 20px;
+                                    font-size: 13px;
+                                    font-family: 'Microsoft YaHei';
+                                    color: rgb(129, 129, 129); line-height: 25px;">
+                                    用户主动参与互动、拉新促活、提高互动性和用户参与度
+                                    </p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+				<!-- Section -->
+                <!-- <section class="wrapper style1" style="z-index: 0;">
+                    <div class="inner">
+                        <header class="align-center">
+                            <h2 style="margin-bottom: 15px;font-weight: bolder;font-size: 25px;">更多案例</h2>
+                            <p>MORE CASES</p>
+                        </header>
+                        <div style="margin: 0 60px;" class="flex flex-3">
+                            <div class="col align-center">
+                                <div class="image round fit" >
+                                    <img src="./custo.jpg"  alt="" />
+                                </div>
+                                <p>Chase Whisply </p>
+                            </div>
+                            <div class="col align-center">
+                                <div class="image round fit">
+                                    <img  src="./画板11.png" alt="" />
+                                </div>
+                                <p>AR Basketball </p>
+                            </div>
+                            <div class="col align-center">
+                                <div class="image round fit">
+                                    <img   src="./game.jpg" alt="" />
+                                </div>
+                                <p>AR Tank</p>
+                            </div>
+                        </div>
+                    </div>
+                </section> -->
+
+				<!-- Section -->
+        <section id="case" class="wrapper style1" style="z-index: 0;">
+          <div class="inner">
+              <header class="align-center">
+                  <h2 style="margin-bottom: 15px;font-weight: bolder;font-size: 25px;">更多案例</h2>
+                  <p>MORE CASES</p>
+              </header>
+              <div class="img" style="margin-bottom: 100px;">
+                <div class="whole">
+                    <div class="roll-img">
+                        <span class="last"><</span>
+                        <ul id="ul">
+                            <li class="left"><img src="./webar.jpg" alt="">
+                              <p class="t1 " style="text-align: center;margin-top: 15px;">AR 营销</p>
+                              <div></div></li>
+                            <li class="center1"><img src="./educat.jpg" alt="">
+                              <p class="t1 " style="text-align: center;margin-top: 15px;">AR 教育</p>
+
+                              <div></div></li>
+                            <li class="right"><img src="./game.jpg" alt="">
+                              <p class="t1 " style="text-align: center;margin-top: 15px;">AR 娱乐</p>
+                              <div></div></li>
+                        </ul>
+                        <span class="next">></span>
+                    </div>
+                </div>
+                <div class="list" style="margin-top: 50px;">
+                    <span class="btn" ></span>
+                    <span class="btn" style="background: red;"></span>
+                    <span class="btn" ></span>
+                </div>
+            </div>
+        </div>
+      </section>
+
+
+              <script src="./jquery-2.2.4.min.js"></script>
+              <script>
+                  let classes = ['left','center1','right'];
+                  let timer=setInterval(function(){before();},5000);
+            function before(){
+                for(let i=0;i<classes.length;i++){
+                    $('.btn:eq('+i+')').css("background","gray");
+                 }
+                let last = classes.pop();
+                 classes.unshift(last);
+                  for(let i=0;i<classes.length;i++){
+                     $('#ul>li:eq('+i+')').attr("class",classes[i]);
+                }
+                 for(let i=0;i<classes.length;i++){
+                      if($('#ul>li:eq('+i+')').attr("class")=='center1'){
+                        $('.btn:eq('+i+')').css("background","red");
+                     }
+                  }
+          }
+        function after(){
+              for(let i=0;i<classes.length;i++){
+                  $('.btn:eq('+i+')').css("background","gray");
+              }
+              let first = classes.shift();
+              classes.push(first);
+              for(let i=0;i<classes.length;i++){
+                  $('#ul>li:eq('+i+')').attr("class",classes[i]);
+              }
+              for(let i=0;i<classes.length;i++){
+                  if($('#ul>li:eq('+i+')').attr("class")=='center1'){
+                      $('.btn:eq('+i+')').css("background","red");
+                  }
+              }
+        }
+        for(let i=0;i<classes.length;i++){
+            (function(i){
+                 $('#ul>li:eq('+i+')').click(function(){
+                      if($('#ul>li:eq('+i+')').attr("class")=="left"){
+                          after();
+                      }else if($('#ul>li:eq('+i+')').attr("class")=="right"){
+                          before();
+                      }else{
+                        return false;
+                  }
+              });
+              $('.btn:eq('+i+')').mouseover(function(){
+                  $('.btn:eq('+i+')').css("background","red");
+                  clearInterval(timer);
+                  while(classes[i]!='center1'){
+                      before();
+                  }
+              });
+              $('.btn:eq('+i+')').mouseout(function(){
+                  $('.btn:eq('+i+')').css("background","rgb(244,244,244)");
+                  clearInterval(timer);
+                  timer=setInterval(function(){
+                      before();
+                  },5000);
+              });
+          })(i);
+      }
+      
+          $('.last').click(function(){
+              clearInterval(timer);
+              before();
+              timer=setInterval(function(){
+                  before();
+              },5000);
+          });
+          $('.next').click(function(){
+              clearInterval(timer);
+              after();
+              timer=setInterval(function(){
+                  before();
+              },5000);
+          });
+          $('.img').mouseover(function(){
+              $('.last,.next').css("display","block");
+              clearInterval(timer);
+          });
+          $('.img').mouseout(function(){
+              $('.last,.next').css("display","none");
+              clearInterval(timer);
+              timer=setInterval(function(){
+                  before();
+              },5000);
+          });
+              </script>
+
+
+</div>
+
+
+    <div class="container" style="background-color: rgb(32, 32, 32);color: #fff;">
+            <div class="align-center" style="padding: 20px;">
+                <p>Copyright &copy; 2020 Victory Template</p>
+            </div>
+            <div class="align-center" style="padding: 10px;">
+                <p>Design: TemplateMo</p>
+        </div>
+    </div>
+
+
+
+
+    <script src="./jquery-2.2.4.min.js" charset="utf-8"></script>
+
+    
+<script src="./layui-master/layui-master/src/layui.js" charset="utf-8"></script>
+<!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
+<script>
+layui.use(['form', 'layedit', 'laydate'], function(){
+  var form = layui.form
+  ,layer = layui.layer
+  ,layedit = layui.layedit
+  ,laydate = layui.laydate;
+  
+  //日期
+  laydate.render({
+    elem: '#date'
+  });
+  laydate.render({
+    elem: '#date1'
+  });
+  
+  //创建一个编辑器
+  var editIndex = layedit.build('LAY_demo_editor');
+  //自定义验证规则
+  form.verify({
+    title: function(value){
+      if(value.length < 5){
+        return '标题至少得5个字符啊';
+      }
+    }
+    ,pass: [
+      /^[\S]{6,12}$/
+      ,'密码必须6到12位，且不能出现空格'
+    ]
+    ,content: function(value){
+      layedit.sync(editIndex);
+    }
+  });
+  
+  //监听指定开关
+  form.on('switch(switchTest)', function(data){
+    layer.msg('开关checked：'+ (this.checked ? 'true' : 'false'), {
+      offset: '6px'
+    });
+    layer.tips('温馨提示：请注意开关状态的文字可以随意定义，而不仅仅是ON|OFF', data.othis)
+  });
+  
+  //监听提交
+  form.on('submit(demo1)', function(data){
+    layer.alert(JSON.stringify(data.field), {
+      title: '最终的提交信息'
+    })
+    return false;
+  });
+ 
+  //表单赋值
+  layui.$('#LAY-component-form-setval').on('click', function(){
+    form.val('example', {
+      "username": "贤心" // "name": "value"
+      ,"password": "123456"
+      ,"interest": 1
+      ,"like[write]": true //复选框选中状态
+      ,"close": true //开关状态
+      ,"sex": "女"
+      ,"desc": "我爱 layui"
+    });
+  });
+  
+  //表单取值
+  layui.$('#LAY-component-form-getval').on('click', function(){
+    var data = form.val('example');
+    alert(JSON.stringify(data));
+  });
+  
+});
+</script>
+
+<script>
+layui.use('upload', function(){
+  var $ = layui.jquery
+  ,upload = layui.upload;
+  
+  //普通图片上传
+  var uploadInst = upload.render({
+    elem: '#test1'
+    ,url: 'https://httpbin.org/post' //改成您自己的上传接口
+    ,before: function(obj){
+      //预读本地文件示例，不支持ie8
+      obj.preview(function(index, file, result){
+        $('#demo1').attr('src', result); //图片链接（base64）
+      });
+    }
+    ,done: function(res){
+      //如果上传失败
+      if(res.code > 0){
+        return layer.msg('上传失败');
+      }
+      //上传成功
+    }
+    ,error: function(){
+      //演示失败状态，并实现重传
+      var demoText = $('#demoText');
+      demoText.html('<span style="color: #FF5722;">上传失败</span> <a class="layui-btn layui-btn-xs demo-reload">重试</a>');
+      demoText.find('.demo-reload').on('click', function(){
+        uploadInst.upload();
+      });
+    }
+  });
+  
+   //指定允许上传的文件类型
+  upload.render({
+    elem: '#test3'
+    ,url: 'https://httpbin.org/post' //改成您自己的上传接口
+    ,accept: 'file' //普通文件
+    ,done: function(res){
+      layer.msg('上传成功');
+      console.log(res);
+    }
+  });
+  upload.render({ //允许上传的文件后缀
+    elem: '#test4'
+    ,url: 'https://httpbin.org/post' //改成您自己的上传接口
+    ,accept: 'file' //普通文件
+    ,exts: 'zip|rar|7z' //只允许上传压缩文件
+    ,done: function(res){
+      layer.msg('上传成功');
+      console.log(res)
+    }
+  });
+  upload.render({
+    elem: '#test5'
+    ,url: 'https://httpbin.org/post' //改成您自己的上传接口
+    ,accept: 'video' //视频
+    ,done: function(res){
+      layer.msg('上传成功');
+      console.log(res)
+    }
+  });
+  upload.render({
+    elem: '#test6'
+    ,url: 'https://httpbin.org/post' //改成您自己的上传接口
+    ,accept: 'audio' //音频
+    ,done: function(res){
+      layer.msg('上传成功');
+      console.log(res)
+    }
+  });
+})
+</script>
+<script>
+  layui.use('carousel', function(){
+    var carousel = layui.carousel;
+    
+    //建造实例
+    carousel.render({
+      elem: '#test1'
+      ,index: 2
+      //,full: true
+      ,arrow: 'always'
+      //,interval: 5000
+      //,autoplay: false
+      //,indicator: 'outside'
+      //,trigger: 'hover'
+    });
+    
+    //事件
+    carousel.on('change(test1)', function(res){
+      console.log(res)
+    });
+  
+    carousel.render({
+      elem: '#test22'
+      ,interval: 180000
+      //,full: true
+      ,anim: 'fade'
+      ,width:'100%'
+      ,height: '600px'
+    });
+    
+
+  });
+  </script>
+  
+</body>
+</html>
+ 
